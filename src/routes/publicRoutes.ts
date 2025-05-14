@@ -1,6 +1,7 @@
 import { Home, HowFunction, AboutUs, Contact } from "../pages/Client";
 import { Login, Register, NotFound } from "../pages";
 import { routeType } from "./types/routes";
+import { Catalog } from "../pages/Client/catalog/Catalog";
 
 export const publicRoutes: routeType[] = [
   {
@@ -37,5 +38,10 @@ export const publicRoutes: routeType[] = [
     name: "NotFound",
     path: "/notFound",
     element: NotFound,
+  },
+  {
+    name: "Catalog",
+    path: "/catalog",
+    element: Catalog,
   },
 ];
